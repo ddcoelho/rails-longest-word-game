@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1><%= @message[:message] %></h1>
+      <h2>You took <strong><%= @message[:time] %></strong> seconds to reply the word <strong><%= @input %></strong>, for a total of <strong><%= @message[:score] %></strong> points!</h2>
+    </div>
+
+    <%= link_to "Play again", game_path %>
+
+  </body>
+</html>
